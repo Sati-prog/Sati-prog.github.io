@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -700,7 +700,7 @@
                         href="projects/POLEJIM/index.html"
                         target="_blank"
                         class="portfolio__item horizontal"
-                        ><img src="img/works/bed.jpg" alt="bad"/></a
+                        ><img src="img/works/bed.jpg" alt="bed"/></a
                     >
                 </div>
                 <div class="portfolio__wrapper-new">
@@ -708,32 +708,37 @@
                         href="projects/challenge/index.html"
                         target="_blank"
                         class="portfolio__item vertical"
-                        ><img src="img/works/challenge.png" alt="bad"/></a
+                        ><img src="img/works/challenge.png" alt="challenge"/></a
                     ><a
                         href="projects/food/index.html"
                         target="_blank"
                         class="portfolio__item horizontal"
-                        ><img src="img/works/food.jpg" alt="bad"/></a
+                        ><img src="img/works/food.jpg" alt="food"/></a
                     ><a
                         href="projects/eshop/index.html"
                         target="_blank"
                         class="portfolio__item"
-                        ><img src="img/works/eshop.jpg" alt="uber" /> </a
+                        ><img src="img/works/eshop.jpg" alt="eshop" /> </a
                     ><a
                         href="projects/window/index.html"
                         target="_blank"
                         class="portfolio__item"
-                        ><img src="img/works/window.png" alt="uber" /> </a
+                        ><img src="img/works/window.png" alt="window" /> </a
                     ><a
                         href="https://caa.gov.kz/symposium"
                         target="_blank"
                         class="portfolio__item"
-                        ><img src="img/works/aviation.png" alt="uber" /> </a
+                        ><img src="img/works/aviation.png" alt="aviation" /> </a
                     ><a
-                        href="projects/childhood/index.php"
+                        href="https://nike-employees-template.vercel.app/"
                         target="_blank"
                         class="portfolio__item"
-                        ><img src="img/works/childhood.jpg" alt="uber" /> </a
+                        ><img src="img/works/employees.jpg" alt="employees" /> </a
+                    ><a
+                        href="https://marvel-infoportal.vercel.app/"
+                        target="_blank"
+                        class="portfolio__item"
+                        ><img src="img/works/marvel.jpg" alt="marvel" /> </a
                     >
                 </div>
             </div>
@@ -849,7 +854,7 @@
                             Or leave your contact details and I will write to
                             you myself:
                         </div>
-                        <form action="#" class="contacts__form">
+                        <form action="#" class="contacts__form" id="form">
                             <div class="contacts__input">
                                 <input
                                     required
@@ -873,7 +878,7 @@
                                 <label for="text">Your message</label>
                             </div>
                             <div class="contacts__triggers">
-                                <button class="contacts__btn btn">
+                                <button class="contacts__btn btn" data-modal="contacts">
                                     Send a message
                                 </button>
                                 <div class="contacts__policy">
@@ -891,7 +896,22 @@
                 </div>
             </div>
         </section>
+
+        <div class="overlay">
+            <div class="modal modal_mini" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+                <div class="modal__descr">
+                    Я обязательно свяжусь с вами
+                    <br><br>
+                    в ближайшее время!
+                </div>
+            </div>
+        </div>
+
         <section class="footer"><div class="footer"></div></section>
+
+        <script src="js/jquery.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
