@@ -1,0 +1,69 @@
+body {
+    display: block;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    background: url(../img/bg.jpg) 100% 100% no-repeat fixed;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+.navbar-brand {
+    margin-right: 100px;
+}
+
+.logo {
+    height: 24px;
+    border-radius: 3px;
+}
+
+.rounded-img {
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 0.6em;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.about {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+    .contacts {
+        margin-top: 24px;
+    }
+}
